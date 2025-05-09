@@ -1,45 +1,46 @@
 import React from "react";
 import "./Navbar.css";
 import "./App.css";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav class="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
+        <Link to="/" className="navbar-brand">
           <img
             src="/Roamify.png"
             alt="Logo"
             width="60"
             height="60"
-            class="d-inline-block align-text-top"
+            className="d-inline-block align-text-top"
           />
           <strong> Roamify</strong>
-        </a>
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./Home.js">
+        </Link>
+        <ul className="nav justify-content-end">
+          <li className="nav-item">
+            <Link to="/" className="nav-link active">
               <strong> Home</strong>
-            </a>
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li className="nav-item">
+            <Link to="/profile" className="nav-link">
               <strong> Profile</strong>
-            </a>
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li className="nav-item">
+            <Link to="/trips" className="nav-link">
               <strong> Your trips</strong>
-            </a>
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">
+          <li className="nav-item">
+            <Link to="/Communityforum" className="nav-link">
               <strong> Community Forum</strong>
-            </a>
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">
+          <li className="nav-item">
+            <Link to="/logout" className="nav-link">
               <strong> Logout</strong>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Homepage.css";
+import { Link } from "react-router-dom";
+
 function Homepage() {
   return (
     <div className="container py-5">
@@ -18,9 +20,9 @@ function Homepage() {
             <div className="card-body">
               <h5 className="card-title">Name of the city from the database</h5>
               <p className="card-text">Description from the database</p>
-              <a href="#" className="btn btn-primary">
+              <Link to="/destination" className="btn detailButton">
                 See more details!
-              </a>
+              </Link>
             </div>
           </div>
         </div>

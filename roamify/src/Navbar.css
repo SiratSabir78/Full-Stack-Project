@@ -5,6 +5,9 @@
 .nav-link {
   color: #8812a5 !important;
 }
+.nav-link:hover {
+  color: black;
+}
 .navbar-brand {
   color: #a844c1 !important;
 }
@@ -19,5 +22,5 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
