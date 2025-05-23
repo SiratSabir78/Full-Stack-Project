@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CommunityForum.css";
+import "./CSS/CommunityForum.css";
 
 const CommunityForum = () => {
   const [questions, setQuestions] = useState([

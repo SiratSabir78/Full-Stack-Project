@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import Homepage from "./Homepage";
-import Navbar from "./Navbar";
-import Communityforum from "./Communityforum";
-
+import "./Componets/CSS/App.css";
+import Homepage from "./Componets/Homepage";
+import Navbar from "./Componets/Navbar";
+import Communityforum from "./Componets/Communityforum";
 
 function App() {
   return (
