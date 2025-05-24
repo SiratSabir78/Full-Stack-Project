@@ -1,17 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./Componets/CSS/App.css";
 import Homepage from "./Componets/Homepage";
-import Navbar from "./Componets/Navbar";
 import Communityforum from "./Componets/Communityforum";
+import Signup from "./Componets/SignUp";
+import NavBar from "./Componets/Navbar";
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Signup />} />
         <Route path="/Communityforum" element={<Communityforum />} />
+        <Route path="/homepage" element={<Homepage />} />{" "}
+        <Route path="/Navbar" element={<NavBar />} />
       </Routes>
     </Router>
   );

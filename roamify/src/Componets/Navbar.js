@@ -1,11 +1,10 @@
 import React from "react";
 import "./CSS/Navbar.css";
-import "./CSS/App.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav class="navbar">
-      <div class="container-fluid">
+    <nav className="navbar">
+      <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           <img
             src="/Roamify.png"
@@ -35,6 +34,11 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/Communityforum" className="nav-link">
               <strong> Community Forum</strong>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/Login" className="nav-link">
+              <strong> Login</strong>
             </Link>
           </li>
           <li className="nav-item">
