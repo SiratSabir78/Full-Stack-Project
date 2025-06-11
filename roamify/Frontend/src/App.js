@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./Componets/CSS/App.css";
-import Homepage from "./Componets/Homepage";
-import Navbar from "./Componets/Navbar";
-import Communityforum from "./Componets/Communityforum";
+import "./components/CSS/App.css";
+import Homepage from "./components/Homepage";
+import Navbar from "./components/Navbar";
+import Communityforum from "./components/Communityforum";
 
 function App() {
   return (
